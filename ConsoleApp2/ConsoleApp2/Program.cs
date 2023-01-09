@@ -168,44 +168,6 @@ namespace ConsoleApp2
                         }
                         Console.WriteLine();
                     }
-                    
-                    /*else if (accessInput == 2)
-                    {
-                        Pet pet = new Pet();
-
-                        Console.WriteLine("Enter 1 to add pet table \n Enter 2 to edit pet table \n Enter 3 to display pet table");
-                        Console.Write("Please enter input= ");
-
-                        userNeed = Convert.ToInt32(Console.ReadLine());
-                        if (userNeed == 1)
-                        {
-                            Console.Write("Enter person id= ");
-                            mamal.id = Convert.ToInt32(Console.ReadLine());
-                            Console.Write("Enter Person name= ");
-                            mamal.name = Console.ReadLine();
-                            Console.Write("Enter person age= ");
-                            mamal.age = Convert.ToInt32(Console.ReadLine());
-                            Console.Write("Enter person cgpa= ");
-                            pet.vaccinatedStatus = Convert.ToBoolean(Console.ReadLine());
-
-                            pet.add();
-                        }
-                        else if (userNeed == 2)
-                        {
-                            Console.Write("Enter pet id= ");
-                            id = Convert.ToInt32(Console.ReadLine());
-
-                            pet.edit(id);
-                        }
-                        else if (userNeed == 3)
-                        {
-                            pet.display();
-                        }
-                        else
-                        {
-                            Console.WriteLine("Invalid input");
-                        }
-                    }*/
                 }
         }
         Console.WriteLine(" Done");
