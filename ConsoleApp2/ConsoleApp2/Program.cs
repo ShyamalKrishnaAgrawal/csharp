@@ -115,23 +115,23 @@ namespace ConsoleApp2
                         UserNeed = Convert.ToInt32(Console.ReadLine());
                         if (UserNeed == 1)
                         {
-                            Console.Write(" Enter person id= ");
+                            Console.Write(" Enter pet id= ");
                             Id = Convert.ToInt32(Console.ReadLine());
-                            Console.Write(" Enter Person name= ");
+                            Console.Write(" Enter pet name= ");
                             Name = Console.ReadLine();
-                            Console.Write(" Enter person age= ");
+                            Console.Write(" Enter pet age= ");
                             Age = Convert.ToInt32(Console.ReadLine());
-                            Console.Write(" Enter person cgpa= ");
-                            Cgpa = Convert.ToDouble(Console.ReadLine());
-                            Person pet = new Person();
-                            pet.Add(Id, Name, Age, Cgpa);
+                            Console.Write(" Enter pet cgpa= ");
+                            VaccinatedStatus = Convert.ToBoolean(Console.ReadLine());
+                            Pet pet = new Pet();
+                            pet.Add(Id, Name, Age, VaccinatedStatus);
                             PetObjectList.Add(pet);
 
                         }
                         else if (UserNeed == 2)
                         {
 
-                            Console.Write(" Enter person id= ");
+                            Console.Write(" Enter pet id= ");
                             Id = Convert.ToInt32(Console.ReadLine());
 
                             Pet pet = new Pet();
@@ -140,7 +140,7 @@ namespace ConsoleApp2
                         }
                         else if (UserNeed == 3)
                         {
-                            Console.Write(" Enter person id= ");
+                            Console.Write(" Enter pet id= ");
                             Id = Convert.ToInt32(Console.ReadLine());
                             Pet pet = new Pet();
                             PetObjectList = pet.Delete(PetObjectList, Id);
