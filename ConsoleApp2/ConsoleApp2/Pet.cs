@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace ConsoleApp2
 {
-    internal class Pet: Mamal, IFixedDetails
+    internal class Pet: Mamal
     {
         public bool vaccinatedStatus;
 

@@ -52,6 +52,7 @@ namespace ConsoleApp2
                         UserNeed = Convert.ToInt32(Console.ReadLine());
                         if (UserNeed == 1)
                         {
+                            // Add person details
                             Console.Write(" Enter person id= ");
                             Id = Convert.ToInt32(Console.ReadLine());
                             Console.Write(" Enter Person name= ");
@@ -67,7 +68,7 @@ namespace ConsoleApp2
                         }
                         else if (UserNeed == 2)
                         {
-
+                            // Edit person details
                             Console.Write(" Enter person id= ");
                             Id = Convert.ToInt32(Console.ReadLine());
 
@@ -77,6 +78,7 @@ namespace ConsoleApp2
                         }
                         else if (UserNeed == 3)
                         {
+                            // Delete a person details
                             Console.Write(" Enter person id= ");
                             Id = Convert.ToInt32(Console.ReadLine());
                             Person person = new Person();
@@ -86,11 +88,13 @@ namespace ConsoleApp2
                         }
                         else if (UserNeed == 4)
                         {
+                            // Person display details
                             Person person = new Person();
                             person.Display(PersonObjectList);
                         }
                         else if (UserNeed == 5)
                         {
+                            // Write person table/details in file
                             string file = @"C:\Users\developer\Downloads\Person.txt";
                             Person person = new Person();
                             person.WriteToFile(file, PersonObjectList);
@@ -101,7 +105,7 @@ namespace ConsoleApp2
                         }
                         else
                         {
-                            Console.WriteLine("Invalid input");
+                            Console.WriteLine(" Invalid input");
                         }
                         Console.WriteLine();
                     }
@@ -115,13 +119,14 @@ namespace ConsoleApp2
                         UserNeed = Convert.ToInt32(Console.ReadLine());
                         if (UserNeed == 1)
                         {
+                            // Add pet details
                             Console.Write(" Enter pet id= ");
                             Id = Convert.ToInt32(Console.ReadLine());
                             Console.Write(" Enter pet name= ");
                             Name = Console.ReadLine();
                             Console.Write(" Enter pet age= ");
                             Age = Convert.ToInt32(Console.ReadLine());
-                            Console.Write(" Enter pet cgpa= ");
+                            Console.Write(" Enter pet vaccinated status= ");
                             VaccinatedStatus = Convert.ToBoolean(Console.ReadLine());
                             Pet pet = new Pet();
                             pet.Add(Id, Name, Age, VaccinatedStatus);
@@ -130,30 +135,31 @@ namespace ConsoleApp2
                         }
                         else if (UserNeed == 2)
                         {
-
+                            // Edit pet details
                             Console.Write(" Enter pet id= ");
                             Id = Convert.ToInt32(Console.ReadLine());
 
                             Pet pet = new Pet();
                             PetObjectList = pet.Edit(PetObjectList, Id);
-
                         }
                         else if (UserNeed == 3)
                         {
+                            // Delete pet details
                             Console.Write(" Enter pet id= ");
                             Id = Convert.ToInt32(Console.ReadLine());
+
                             Pet pet = new Pet();
                             PetObjectList = pet.Delete(PetObjectList, Id);
-
-
                         }
                         else if (UserNeed == 4)
                         {
+                            // Display pet details
                             Pet pet = new Pet();
                             pet.Display(PetObjectList);
                         }
                         else if (UserNeed == 5)
                         {
+                            // Write pet details in a file
                             string file = @"C:\Users\developer\Downloads\Pet.txt";
                             Pet pet = new Pet();
                             pet.WriteToFile(file, PetObjectList);
@@ -164,7 +170,7 @@ namespace ConsoleApp2
                         }
                         else
                         {
-                            Console.WriteLine("Invalid input");
+                            Console.WriteLine(" Invalid input");
                         }
                         Console.WriteLine();
                     }

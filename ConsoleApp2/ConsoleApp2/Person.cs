@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    internal class Person :Mamal,IFixedDetails
+    internal class Person :Mamal
     {
-        public double Cgpa { get; set; }
+        public double Cgpa { get ; set; }
 
         public void SetData(int id, string name, int age)
         {
